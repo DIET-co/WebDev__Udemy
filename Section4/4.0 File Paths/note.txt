@@ -1,0 +1,2 @@
+use relative file path for the images . same folder .. parent folder 
+<img src="Image path" alt="Discription" width=" " height=" " >
