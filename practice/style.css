@@ -1,0 +1,27 @@
+h1 {
+    color: red;
+}
+
+* {
+    text-align: center;
+    font-weight: normal;
+}
+
+.diff{
+    color: green;
+}
+
+h2[value="6"]{
+    color: blueviolet;
+    background-color: black;
+}
+
+#idk{
+   background-color: chartreuse; 
+}
+
+img {
+    height: 200px;
+    width: 300px;
+}
+
