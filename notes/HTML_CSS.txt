@@ -113,6 +113,185 @@ there are 3 ways of incuding style sheets
    </style>
 </head>
 
+CSS-- Selectors
+
+<element class="note">
+
+.note {
+  font-size: 20px;
+}
+
+<element id="id-selector-demo">
+
+#id-selector-demo {
+  color: green;
+}
+
+<element value="4">
+
+element[value="4"] {
+  color: blue;
+}
+
+* <- every element
+
+element {
+  marginleft: -40px;
+  marginright: -50px;
+}
+
+------------------------------------------------------------------
+
+color: hexcode, rgb , color name 
+
+
+font properties
+font-size: 20px rem-root  em - parent
+font-weight:  [100-900]  lighter-bolder  bold
+
+font-family: helvetica, sans-serif
+           : "Times new roman",serif
+
+fonts.google.com
+
+text align: center
+
+mdn webdocs<______________--
+
+---
+CSS cascade_________
+
+external>internal>inline.
+
+postion, specifity, type, importance
+
+<li id="first-id" class="first-class" draggable>
+
+li {color:blue}
+.first-class {color: red;}
+li[dragable] {color: purple}
+#first-id {color: orange}
+
+
+order of specifity
+
+4 element
+3 class 
+2 attribute
+1 id
+
+
+type _> external>internal>inline
+
+Importance
+
+color:red;
+color: green !important;  <keyword-- priority
+
+<p>Yellow text<p>
+<div class="box inner-box">
+   <p>white text<p>
+</div>   
+
+Combining CSS selectors\\\\\\\\\\
+
+
+/group/*
+
+selector, selector {
+  color: bluevoilet;
+}
+
+/child/
+
+selector > selector {
+  color: firebrick          
+}
+direct child only
+
+/descendent/
+selector1 selector2 {
+  color blue;
+}
+
+selector2 is blue as long as ther is selector 1 as a parent// grand parent
+
+/chaining/
+
+selectorselector {
+  color: green;
+}
+
+very specific <h1 id=t class big h>
+
+h1#t.big.h {
+  color: red
+}
+
+Combining combiners
+
+
+
+example::
+
+<body>
+  <h1>To Do List</h1>
+  <h2>Monday</h2>
+  <div class="box">
+    <p class="done">Do these things today!</p>
+    <ul class="list">
+      <li>Wash Clothes</li>
+      <li class="done">Read</li>
+      <li class="done">Maths Questions</li>
+    </ul>
+  </div>
+
+  <ul>
+    <p class="done">Other items</p>
+  </ul>
+  <p>The best preparation for tomorrow is doing your best today.</p>
+
+</body>
+
+
+/* Group */
+h1,
+h2 {
+  color: blueviolet;
+}
+
+/* Child */
+.box > p {
+  color: firebrick;
+}
+
+/* Descendent */
+.box li {
+  color: blue;
+}
+
+/* Chained */
+li.done {
+  color: green;
+}
+
+/* Multiple Combiners */
+ul p.done {
+  font-size: 0.5rem;
+}
+
+CSS positioning.
+
+Relative, absolute, fixed and static
+
+do this positioning again
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+CSS display property
+
+block, inline , inline-block
+
 
 
 
